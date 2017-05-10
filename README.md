@@ -2,11 +2,11 @@
 
 Jester DRYs up your Jest + React snapshot code.
 
-##usage
+## usage
 
 Jester provides methods which will create and run unit tests for you.
 
-####jester.runSimpleSnapshotTests(Object : Collection<StyledComponent>)
+#### jester.runSimpleSnapshotTests(Object : Collection<StyledComponent>)
 
 Accepts a collection of [Styled Components](https://github.com/styled-components/styled-components)
 then creates and runs simple snapshots tests for each component in the collection.

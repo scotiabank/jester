@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`jester renders BoldHeader correctly 1`] = `
+<h1
+  className="irvdHW"
+>
+  Snapshots Rock
+</h1>
+`;
+
+exports[`jester renders Header correctly 1`] = `
+<h1
+  className="hakVVj"
+>
+  Snapshots Rock
+</h1>
+`;

@@ -1,7 +1,7 @@
 /* eslint-disable react/prop-types */
 
 import React from 'react';
-import jester from './../index';
+import jester from 'index';
 
 const Header = ({ children }) => (
   <header>{ children }</header>

@@ -4,40 +4,40 @@ Jester DRYs up your Jest + React snapshot code.
 
 ## usage
 
-Jester provides methods which will create and run unit tests for you.
+Provides methods that create and run tests for you.
 
-#### jester.runSimpleSnapshotTests(Object : Collection<StyledComponent>)
+## api
 
-Accepts a collection of [Styled Components](https://github.com/styled-components/styled-components)
-then creates and runs simple snapshots tests for each component in the collection.
+#### #runSimpleSnapshotTests(Object : Collection&lt;Component&gt;)
+
+Accepts a collection of components and runs them through a simple snapshot test.
 
 ```js
 import jester from 'jester'
-import styled from 'styled-components';
 
-const Header = styled.h1`
-  font-size: 1.8em;
-  font-weight: normal;
-`;
+const Header = ({ children }) => (
+  <header>{ children }</header>
+);
 
-const BoldHeader = styled.h1`
-  font-size: 1.8m;
-  font-weight: bold;
-`;
+const Paragraph = ({ children }) => (
+  <p>{ children }</p>
+);
 
 describe('jester', () => {
   jester.runSimpleSnapshotTests({
     Header,
-    BoldHeader
+    Paragraph
   });
 });
 ```
+
 ## development
 
 #### Run tests
 
 ```bash
 npm run test
+npm run test:watch
 ```
 
 #### Build
@@ -45,5 +45,3 @@ npm run test
 ```bash
 npm run build
 ```
-
-

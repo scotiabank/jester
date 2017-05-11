@@ -1,19 +1,19 @@
+/* eslint-disable react/prop-types */
+
+import React from 'react';
 import jester from './../index';
-import styled from 'styled-components';
 
-const Header = styled.h1`
-  font-size: 1.8em;
-  font-weight: normal;
-`;
+const Header = ({ children }) => (
+  <header>{ children }</header>
+);
 
-const BoldHeader = styled.h1`
-  font-size: 1.8m;
-  font-weight: bold;
-`;
+const Paragraph = ({ children }) => (
+  <p>{ children }</p>
+);
 
 describe('jester', () => {
   jester.runSimpleSnapshotTests({
     Header,
-    BoldHeader
+    Paragraph
   });
 });

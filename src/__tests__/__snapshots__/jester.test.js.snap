@@ -1,17 +1,13 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`jester renders BoldHeader correctly 1`] = `
-<h1
-  className="irvdHW"
->
+exports[`jester renders Header correctly 1`] = `
+<header>
   Snapshots Rock
-</h1>
+</header>
 `;
 
-exports[`jester renders Header correctly 1`] = `
-<h1
-  className="hakVVj"
->
+exports[`jester renders Paragraph correctly 1`] = `
+<p>
   Snapshots Rock
-</h1>
+</p>
 `;

@@ -29,8 +29,7 @@
     "lodash": "4.17.4",
     "react": "15.4.2",
     "react-test-renderer": "15.4.2",
-    "shx": "0.2.2",
-    "styled-components": "1.4.4"
+    "shx": "0.2.2"
   },
   "jest": {
     "collectCoverage": true,

@@ -1,6 +1,6 @@
 {
   "name": "@scotia/jester",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Jest Helpers provides some extra functionality to simplify writing your unit tests.",
   "scripts": {
     "lint": "eslint *.js src",
@@ -9,7 +9,8 @@
     "babel": "babel src --out-dir dist",
     "clean": "shx rm -rf dist",
     "copy": "shx cp package.json README.md dist",
-    "build": "npm run clean && npm run lint && npm run test && npm run babel && npm run copy"
+    "build": "npm run clean && npm run lint && npm run test && npm run babel && npm run copy",
+    "issue" : "cd dist && npm publish"
   },
   "devDependencies": {
     "babel-cli": "6.24.0",

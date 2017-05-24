@@ -10,7 +10,7 @@
     "clean": "shx rm -rf dist",
     "copy": "shx cp package.json README.md dist",
     "build": "npm run clean && npm run lint && npm run test && npm run babel && npm run copy",
-    "issue" : "cd dist && npm publish"
+    "issue": "cd dist && npm publish"
   },
   "devDependencies": {
     "@scotia/eslint-config-scotiabank": "1.0.0",

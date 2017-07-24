@@ -1,25 +1,28 @@
 import React from 'react';
-import { mount } from 'enzyme';
+import { mount, shallow } from 'enzyme';
 import toJSON from 'enzyme-to-json';
 import forEach from 'lodash/forEach';
 
-const getSimpleJsonTree = (Component) => {
+const getSimpleJsonTree = (Component, strategy) => {
   return toJSON(
-    mount(<Component>Snapshots Rock</Component>)
+    strategy(<Component>Snapshots Rock</Component>)
   );
 };
 
-const runSimpleSnapshotTest = (name, Component) => {
+const runSnapshotTest = (name, Component, strategy) => {
   test(`renders ${name} correctly`, () => {
-    expect(getSimpleJsonTree(Component)).toMatchSnapshot();
+    expect(getSimpleJsonTree(Component, strategy)).toMatchSnapshot();
   });
 };
 
-const runSimpleSnapshotTests = (components) => forEach(
-  components,
-  (component, key) => runSimpleSnapshotTest(key, component)
-);
+const buildSnapshotTestRunner = (strategy) => {
+  return (components) => forEach(
+    components,
+    (component, key) => runSnapshotTest(key, component, strategy)
+  );
+};
 
 export default {
-  runSimpleSnapshotTests
+  runDeepSnapshotTests: buildSnapshotTestRunner(mount),
+  runShallowSnapshotTests: buildSnapshotTestRunner(shallow)
 };

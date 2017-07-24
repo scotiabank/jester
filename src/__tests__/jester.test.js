@@ -12,8 +12,17 @@ const Paragraph = ({ children }) => (
 );
 
 describe('jester', () => {
-  jester.runSimpleSnapshotTests({
-    Header,
-    Paragraph
+  describe('deep', () => {
+    jester.runDeepSnapshotTests({
+      Header,
+      Paragraph
+    });
+  });
+
+  describe('shallow', () => {
+    jester.runShallowSnapshotTests({
+      Header,
+      Paragraph
+    });
   });
 });

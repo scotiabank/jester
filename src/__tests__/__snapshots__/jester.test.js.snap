@@ -1,13 +1,17 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`jester renders Header correctly 1`] = `
-<header>
-  Snapshots Rock
-</header>
+<Header>
+  <header>
+    Snapshots Rock
+  </header>
+</Header>
 `;
 
 exports[`jester renders Paragraph correctly 1`] = `
-<p>
-  Snapshots Rock
-</p>
+<Paragraph>
+  <p>
+    Snapshots Rock
+  </p>
+</Paragraph>
 `;

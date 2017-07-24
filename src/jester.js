@@ -1,11 +1,12 @@
 import React from 'react';
-import renderer from 'react-test-renderer';
+import { mount } from 'enzyme';
+import toJSON from 'enzyme-to-json';
 import forEach from 'lodash/forEach';
 
 const getSimpleJsonTree = (Component) => {
-  return renderer.create(
-    <Component>Snapshots Rock</Component>
-  ).toJSON();
+  return toJSON(
+    mount(<Component>Snapshots Rock</Component>)
+  );
 };
 
 const runSimpleSnapshotTest = (name, Component) => {

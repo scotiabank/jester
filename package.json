@@ -1,6 +1,6 @@
 {
   "name": "@scotia/jester",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Jest Helpers provides some extra functionality to simplify writing your unit tests.",
   "scripts": {
     "lint": "eslint *.js src",

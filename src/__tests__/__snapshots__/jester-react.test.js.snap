@@ -1,0 +1,29 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`jester deep renders Header correctly 1`] = `
+<Header>
+  <header>
+    Snapshots Rock
+  </header>
+</Header>
+`;
+
+exports[`jester deep renders Paragraph correctly 1`] = `
+<Paragraph>
+  <p>
+    Snapshots Rock
+  </p>
+</Paragraph>
+`;
+
+exports[`jester shallow renders Header correctly 1`] = `
+<header>
+  Snapshots Rock
+</header>
+`;
+
+exports[`jester shallow renders Paragraph correctly 1`] = `
+<p>
+  Snapshots Rock
+</p>
+`;

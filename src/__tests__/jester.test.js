@@ -1,33 +1,8 @@
-/* eslint-disable react/prop-types */
-
-import React from 'react';
-import jester from 'index';
-
-const Header = ({ children }) => (
-  <header>{ children }</header>
-);
-
-const Paragraph = ({ children }) => (
-  <p>{ children }</p>
-);
+import { runSnapshotTests } from '../jester';
 
 describe('jester', () => {
-  describe('deep', () => {
-    jester.runDeepSnapshotTests({
-      Header,
-      Paragraph
-    });
-  });
-
-  describe('shallow', () => {
-    jester.runShallowSnapshotTests({
-      Header,
-      Paragraph
-    });
-  });
-
   describe('object snapshot', () => {
-    jester.runSnapshotTests({
+    runSnapshotTests({
       one: { two: 'three' },
       four: { five: { six: 'seven' } }
     });

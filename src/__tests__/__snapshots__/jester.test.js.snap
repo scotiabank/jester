@@ -16,6 +16,20 @@ exports[`jester deep renders Paragraph correctly 1`] = `
 </Paragraph>
 `;
 
+exports[`jester object snapshot renders four correctly 1`] = `
+"{
+  \\"five\\": {
+    \\"six\\": \\"seven\\"
+  }
+}"
+`;
+
+exports[`jester object snapshot renders one correctly 1`] = `
+"{
+  \\"two\\": \\"three\\"
+}"
+`;
+
 exports[`jester shallow renders Header correctly 1`] = `
 <header>
   Snapshots Rock

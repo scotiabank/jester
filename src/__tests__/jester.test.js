@@ -25,4 +25,11 @@ describe('jester', () => {
       Paragraph
     });
   });
+
+  describe('object snapshot', () => {
+    jester.runSnapshotTests({
+      one: { two: 'three' },
+      four: { five: { six: 'seven' } }
+    });
+  });
 });

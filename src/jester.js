@@ -9,20 +9,32 @@ const getSimpleJsonTree = (Component, strategy) => {
   );
 };
 
-const runSnapshotTest = (name, Component, strategy) => {
+const runComponentSnapshotTest = (name, Component, strategy) => {
   test(`renders ${name} correctly`, () => {
     expect(getSimpleJsonTree(Component, strategy)).toMatchSnapshot();
   });
 };
 
-const buildSnapshotTestRunner = (strategy) => {
+const runSnapshotTest = (name, object) => {
+  test(`renders ${name} correctly`, () => {
+    expect(JSON.stringify(object, null, 2)).toMatchSnapshot();
+  });
+};
+
+const buildComponentSnapshotTestRunner = (strategy) => {
   return (components) => forEach(
     components,
-    (component, key) => runSnapshotTest(key, component, strategy)
+    (component, key) => runComponentSnapshotTest(key, component, strategy)
   );
 };
 
+const runSnapshotTests = (object) => forEach(
+  object,
+  (value, key) => runSnapshotTest(key, value)
+);
+
 export default {
-  runDeepSnapshotTests: buildSnapshotTestRunner(mount),
-  runShallowSnapshotTests: buildSnapshotTestRunner(shallow)
+  runDeepSnapshotTests: buildComponentSnapshotTestRunner(mount),
+  runShallowSnapshotTests: buildComponentSnapshotTestRunner(shallow),
+  runSnapshotTests
 };

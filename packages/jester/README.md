@@ -4,29 +4,20 @@ Jest helpers to reduce boilerplate.
 
 ## usage
 
-Provides methods that create and run tests for you.
+Provides methods that create and run tests for to compare json objects.
 
 ## api
 
-#### #runSimpleSnapshotTests(Object : Collection&lt;Component&gt;)
+#### #runSnapshotTests(Object : {})
 
-Accepts a collection of components and runs them through a simple snapshot test.
+Accepts any object and runs them through a simple snapshot test.
 
 ```js
-import jester from 'jester'
-
-const Header = ({ children }) => (
-  <header>{ children }</header>
-);
-
-const Paragraph = ({ children }) => (
-  <p>{ children }</p>
-);
-
-describe('jester', () => {
-  jester.runSimpleSnapshotTests({
-    Header,
-    Paragraph
+import jester from '@scotia/jester';
+describe('object snapshot', () => {
+  jester.runSnapshotTests({
+    one: { two: 'three' },
+    four: { five: { six: 'seven' } }
   });
 });
 ```
@@ -45,3 +36,4 @@ npm run test:watch
 ```bash
 npm run build
 ```
+

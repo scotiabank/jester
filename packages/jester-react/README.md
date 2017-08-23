@@ -1,30 +1,45 @@
-# jester
+# jester-react
 
 Jester DRYs up your Jest + React snapshot code.
 
 ## usage
 
-Provides methods that create and run tests for you.
+Provides methods that create and run tests for you using enzyme test rendering.
 
 ## api
 
-#### #runSimpleSnapshotTests(Object : Collection&lt;Component&gt;)
+#### #runShallowSnapshotTests(Object : Collection&lt;Component&gt;)
 
-Accepts a collection of components and runs them through a simple snapshot test.
+Accepts a collection of components and runs them through a shallow snapshot test. The test creates a snapshot based on enzyme shallow.
 
 ```js
-import jester from 'jester'
+import jester from '@scotia/jester-react';
 
-const Header = ({ children }) => (
-  <header>{ children }</header>
-);
+const Header = ({ children }) => <header>{children}</header>;
 
-const Paragraph = ({ children }) => (
-  <p>{ children }</p>
-);
+const Paragraph = ({ children }) => <p>{children}</p>;
 
-describe('jester', () => {
-  jester.runSimpleSnapshotTests({
+describe('shallow', () => {
+  jester.runShallowSnapshotTests({
+    Header,
+    Paragraph
+  });
+});
+```
+
+#### #runDeepSnapshotTests(Object : Collection&lt;Component&gt;)
+
+Accepts a collection of components and runs them through a deep snapshot test. The test creates a snapshot based on enzyme mount.
+
+```js
+import jester from '@scotia/jester-react';
+
+const Header = ({ children }) => <header>{children}</header>;
+
+const Paragraph = ({ children }) => <p>{children}</p>;
+
+describe('deep', () => {
+  jester.runDeepSnapshotTests({
     Header,
     Paragraph
   });
@@ -45,3 +60,4 @@ npm run test:watch
 ```bash
 npm run build
 ```
+

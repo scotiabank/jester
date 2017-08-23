@@ -6,7 +6,11 @@ const runSnapshotTest = (name, object) => {
   });
 };
 
-export const runSnapshotTests = (object) => forEach(
+const runSnapshotTests = (object) => forEach(
   object,
   (value, key) => runSnapshotTest(key, value)
 );
+
+export default {
+  runSnapshotTests
+};

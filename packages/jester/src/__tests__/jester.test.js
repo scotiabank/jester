@@ -1,8 +1,8 @@
-import { runSnapshotTests } from '../jester';
+import jester from '../index';
 
 describe('jester', () => {
   describe('object snapshot', () => {
-    runSnapshotTests({
+    jester.runSnapshotTests({
       one: { two: 'three' },
       four: { five: { six: 'seven' } }
     });

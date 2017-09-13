@@ -1,2 +1,2 @@
 # jester
-DRYs up your React + snapshot tests.
+Jester DRYs up your Jest + React snapshot code.

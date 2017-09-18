@@ -1,4 +1,5 @@
 # jester
+[![CircleCI Status](https://circleci.com/gh/scotiabank/jester.svg?style=shield&circle-token=:circle-token)](https://circleci.com/gh/scotiabank/jester)
 
 Jester DRYs up your Jest + React snapshot code.
 

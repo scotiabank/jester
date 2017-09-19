@@ -2,6 +2,9 @@
   "name": "@scotia/jester-react",
   "version": "0.1.0",
   "description": "Jest Helpers provides some extra functionality to simplify writing your unit tests.",
+  "repository": "git@github.com:scotiabank/jester.git",
+  "homepage": "https://github.com/scotiabank/jester/packages/jester-react",
+  "license": "MPL-2.0",
   "scripts": {
     "lint": "eslint *.js src",
     "test": "jest src",

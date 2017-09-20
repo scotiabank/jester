@@ -1,0 +1,19 @@
+{
+  "presets": [
+    "env",
+    "react"
+  ],
+  "plugins": [
+    "transform-object-rest-spread",
+    [ "module-resolver", {
+      "root": [ "./src" ]
+    }]
+  ],
+  "env": {
+    "development": {
+      "ignore": [
+        "src/**/*.test.js"
+      ]
+    }
+  }
+}

@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`jester object snapshot renders four correctly 1`] = `
+"{
+  \\"five\\": {
+    \\"six\\": \\"seven\\"
+  }
+}"
+`;
+
+exports[`jester object snapshot renders one correctly 1`] = `
+"{
+  \\"two\\": \\"three\\"
+}"
+`;

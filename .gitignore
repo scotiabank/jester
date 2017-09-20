@@ -29,6 +29,9 @@ bower_components
 # node-waf configuration
 .lock-wscript
 
+# Yarn
+.yarnrc
+
 # Compiled binary addons (http://nodejs.org/api/addons.html)
 build/Release
 
@@ -57,3 +60,12 @@ typings/
 # dotenv environment variables file
 .env
 
+# Node
+node_modules
+*.log
+
+# Idea
+.idea
+
+# Build
+dist

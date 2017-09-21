@@ -41,7 +41,7 @@ As you can see for each component that is added the more boilerplate code jester
 
 ## Packages
 
-This repository is a monorepo. That means we publih multiple npm packages from the same codebase, such as:
+This repository is a monorepo that we manage using [Lerna](https://github.com/lerna/lerna). That means that we actually publish [multiple packages](/packages) to npm from the same codebase, including:
 
 | Package | Description |
 |---------|-------------|

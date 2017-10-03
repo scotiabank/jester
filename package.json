@@ -1,5 +1,4 @@
 {
-  "private": true,
   "name": "jester-packages",
   "repository": "git@github.com:scotiabank/jester.git",
   "homepage": "https://github.com/scotiabank/jester",

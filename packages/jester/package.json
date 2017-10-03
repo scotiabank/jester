@@ -5,6 +5,11 @@
   "repository": "git@github.com:scotiabank/jester.git",
   "homepage": "https://github.com/scotiabank/jester/packages/jester",
   "license": "MPL-2.0",
+  "keywords": [
+    "jest",
+    "unit",
+    "snapshot"
+  ],
   "main": "dist/index.js",
   "files": [
     "dist"
@@ -17,6 +22,9 @@
     "clean": "shx rm -rf dist",
     "build": "npm run clean && npm run lint && npm run test && npm run babel",
     "prepublishOnly": "npm run build"
+  },
+  "peerDependencies": {
+    "jest": "^19.0.2"
   },
   "devDependencies": {
     "@scotia/eslint-config-scotiabank": "1.0.0",

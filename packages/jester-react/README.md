@@ -2,6 +2,12 @@
 
 Jester DRYs up your Jest + React snapshot code.
 
+## install
+
+```js
+npm install @scotia/jester-react
+```
+
 ## usage
 
 Provides methods that create and run tests for you using enzyme test rendering.
@@ -60,4 +66,3 @@ npm run test:watch
 ```bash
 npm run build
 ```
-

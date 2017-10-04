@@ -2,6 +2,12 @@
 
 Jest helpers to reduce boilerplate.
 
+## install
+
+```js
+npm install @scotia/jester
+```
+
 ## usage
 
 Provides methods that create and run tests for to compare json objects.
@@ -36,4 +42,3 @@ npm run test:watch
 ```bash
 npm run build
 ```
-

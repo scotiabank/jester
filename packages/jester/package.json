@@ -1,6 +1,6 @@
 {
   "name": "@scotia/jester",
-  "version": "0.3.1",
+  "version": "0.3.2",
   "description": "Jest Helpers provides some extra functionality to simplify writing your unit tests.",
   "repository": "git@github.com:scotiabank/jester.git",
   "homepage": "https://github.com/scotiabank/jester/packages/jester",

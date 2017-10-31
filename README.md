@@ -43,7 +43,7 @@ As you can see for each component that is added the more boilerplate code jester
 
 This repository is a monorepo that we manage using [Lerna](https://github.com/lerna/lerna). That means that we actually publish [multiple packages](/packages) to npm from the same codebase, including:
 
-| Package | Description |
-|---------|-------------|
-| [`jester`](/packages/jester) | The basic version for creating snapshots with plain JSON |
-| [`jester-react`](/packages/jester-react) |  The React specific version for use with React Components|
+| Package | Version | Description |
+|---------|---------|-------------|
+| [`jester`](/packages/jester) | [![npm](https://img.shields.io/npm/v/@scotia/jester.svg?style=flat-square)](https://www.npmjs.com/package/@scotia/jester) | The basic version for creating snapshots with plain JSON |
+| [`jester-react`](/packages/jester-react) |[![npm](https://img.shields.io/npm/v/@scotia/jester-react.svg?style=flat-square)](https://www.npmjs.com/package/@scotia/jester-react) | The React specific version for use with React Components|

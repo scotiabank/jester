@@ -47,3 +47,7 @@ This repository is a monorepo that we manage using [Lerna](https://github.com/le
 |---------|---------|-------------|
 | [`jester`](/packages/jester) | [![npm](https://img.shields.io/npm/v/@scotia/jester.svg?style=flat-square)](https://www.npmjs.com/package/@scotia/jester) | The basic version for creating snapshots with plain JSON |
 | [`jester-react`](/packages/jester-react) |[![npm](https://img.shields.io/npm/v/@scotia/jester-react.svg?style=flat-square)](https://www.npmjs.com/package/@scotia/jester-react) | The React specific version for use with React Components|
+
+## Contributing
+
+#### Scotiabank is committed to enriching the developer community through open source collaboration. We’ve just begun this exciting journey with all of you! At present, we’re only accepting contributions from individuals with whom we have a prior agreement. Stay tuned for more updates from us!
